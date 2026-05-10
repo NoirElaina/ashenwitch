@@ -1,0 +1,577 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - link "NoirElaina" [ref=e6] [cursor=pointer]:
+      - /url: /ashenwitch/
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - text: NoirElaina
+    - generic [ref=e10]:
+      - link "主页" [ref=e11] [cursor=pointer]:
+        - /url: /ashenwitch/
+        - generic [ref=e12]: 主页
+      - link "归档" [ref=e13] [cursor=pointer]:
+        - /url: /ashenwitch/archive/
+        - generic [ref=e14]: 归档
+      - link "关于" [ref=e15] [cursor=pointer]:
+        - /url: /ashenwitch/about/
+        - generic [ref=e16]: 关于
+      - link "GitHub" [ref=e17] [cursor=pointer]:
+        - /url: https://github.com/NoirElaina
+        - generic [ref=e18]:
+          - text: GitHub
+          - img [ref=e19]
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - button "Search Panel" [ref=e23] [cursor=pointer]:
+          - img [ref=e24]
+        - generic:
+          - generic:
+            - img
+            - textbox "Search"
+      - button "Display Settings" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+      - menu [ref=e30]:
+        - menuitem "Light/Dark Mode" [ref=e31] [cursor=pointer]:
+          - img [ref=e33]
+          - img [ref=e36]
+          - img [ref=e39]
+    - generic:
+      - link "主页":
+        - /url: /ashenwitch/
+        - generic: 主页
+        - img
+      - link "归档":
+        - /url: /ashenwitch/archive/
+        - generic: 归档
+        - img
+      - link "关于":
+        - /url: /ashenwitch/about/
+        - generic: 关于
+        - img
+      - link "GitHub":
+        - /url: https://github.com/NoirElaina
+        - generic: GitHub
+        - img
+    - generic [ref=e41]:
+      - generic:
+        - generic:
+          - generic:
+            - text: 主题色
+            - button "Reset to Default":
+              - generic:
+                - img
+          - generic:
+            - generic: "210"
+        - generic:
+          - slider "主题色": "210"
+  - generic [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e46]:
+        - link "Go to About Page" [ref=e47] [cursor=pointer]:
+          - /url: /ashenwitch/about/
+          - generic:
+            - img
+          - img "Profile Image of the Author" [ref=e49]
+        - generic [ref=e50]:
+          - generic [ref=e51]: NoirElaina
+          - generic [ref=e53]: 记录开发、折腾和一些日常想法。
+          - link "GitHub" [ref=e55] [cursor=pointer]:
+            - /url: https://github.com/NoirElaina
+            - img [ref=e56]
+            - text: GitHub
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]: 分类
+          - generic [ref=e61]:
+            - link "View all posts in the 随笔 category" [ref=e62] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?category=%E9%9A%8F%E7%AC%94
+              - button "随笔 1" [ref=e63]:
+                - generic [ref=e64]:
+                  - generic [ref=e65]: 随笔
+                  - generic [ref=e66]: "1"
+            - link "View all posts in the 展示 category" [ref=e67] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?category=%E5%B1%95%E7%A4%BA
+              - button "展示 1" [ref=e68]:
+                - generic [ref=e69]:
+                  - generic [ref=e70]: 展示
+                  - generic [ref=e71]: "1"
+            - link "View all posts in the AI category" [ref=e72] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?category=AI
+              - button "AI 1" [ref=e73]:
+                - generic [ref=e74]:
+                  - generic [ref=e75]: AI
+                  - generic [ref=e76]: "1"
+        - generic [ref=e77]:
+          - generic [ref=e78]: 标签
+          - generic [ref=e80]:
+            - link "View all posts with the 博客 tag" [ref=e81] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=%E5%8D%9A%E5%AE%A2
+              - text: 博客
+            - link "View all posts with the 开站 tag" [ref=e82] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=%E5%BC%80%E7%AB%99
+              - text: 开站
+            - link "View all posts with the 随笔 tag" [ref=e83] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=%E9%9A%8F%E7%AC%94
+              - text: 随笔
+            - link "View all posts with the 学习笔记 tag" [ref=e84] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0
+              - text: 学习笔记
+            - link "View all posts with the Agent tag" [ref=e85] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=Agent
+              - text: Agent
+            - link "View all posts with the AI tag" [ref=e86] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=AI
+              - text: AI
+            - link "View all posts with the Canvas tag" [ref=e87] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=Canvas
+              - text: Canvas
+            - link "View all posts with the ECharts tag" [ref=e88] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=ECharts
+              - text: ECharts
+            - link "View all posts with the LLM tag" [ref=e89] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=LLM
+              - text: LLM
+            - link "View all posts with the MDX tag" [ref=e90] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=MDX
+              - text: MDX
+            - link "View all posts with the Mermaid tag" [ref=e91] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=Mermaid
+              - text: Mermaid
+            - link "View all posts with the Vue tag" [ref=e92] [cursor=pointer]:
+              - /url: /ashenwitch/archive/?tag=Vue
+              - text: Vue
+    - main [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - img [ref=e100]
+              - generic [ref=e102]: 1379 字
+            - generic [ref=e103]:
+              - img [ref=e105]
+              - generic [ref=e107]: 7 分钟
+          - generic [ref=e109]: 交互内容实验室：MDX、Vue、Mermaid、ECharts 与 Canvas
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - img [ref=e114]
+              - generic [ref=e116]: 2026-05-11
+            - generic [ref=e117]:
+              - img [ref=e119]
+              - link "View all posts in the 展示 category" [ref=e122] [cursor=pointer]:
+                - /url: /ashenwitch/archive/?category=%E5%B1%95%E7%A4%BA
+                - text: 展示
+            - generic [ref=e123]:
+              - img [ref=e125]
+              - generic [ref=e127]:
+                - link "View all posts with the MDX tag" [ref=e128] [cursor=pointer]:
+                  - /url: /ashenwitch/archive/?tag=MDX
+                  - text: MDX
+                - generic [ref=e129]: /
+                - link "View all posts with the Vue tag" [ref=e130] [cursor=pointer]:
+                  - /url: /ashenwitch/archive/?tag=Vue
+                  - text: Vue
+                - generic [ref=e131]: /
+                - link "View all posts with the Mermaid tag" [ref=e132] [cursor=pointer]:
+                  - /url: /ashenwitch/archive/?tag=Mermaid
+                  - text: Mermaid
+                - generic [ref=e133]: /
+                - link "View all posts with the ECharts tag" [ref=e134] [cursor=pointer]:
+                  - /url: /ashenwitch/archive/?tag=ECharts
+                  - text: ECharts
+                - generic [ref=e135]: /
+                - link "View all posts with the Canvas tag" [ref=e136] [cursor=pointer]:
+                  - /url: /ashenwitch/archive/?tag=Canvas
+                  - text: Canvas
+          - generic [ref=e139]:
+            - 'heading "交互内容实验室 #" [level=1] [ref=e140]':
+              - text: 交互内容实验室
+              - link "#" [ref=e141] [cursor=pointer]:
+                - /url: "#交互内容实验室"
+            - paragraph [ref=e142]: 这篇文章的重点不是“介绍 MDX 是什么”，而是直接验证一件事：
+            - blockquote [ref=e143]:
+              - paragraph [ref=e144]: 现在这个博客已经可以在文章内容里直接引入 Vue 组件。
+            - paragraph [ref=e145]: 也就是说，后面你不只是能写普通段落、图片和代码块，还可以把图表、流程图、交互可视化、Canvas 动画直接塞进文章正文。
+            - generic [ref=e146]:
+              - 'heading "基础内容能力 #" [level=2] [ref=e147]':
+                - text: 基础内容能力
+                - link "#" [ref=e148] [cursor=pointer]:
+                  - /url: "#基础内容能力"
+              - paragraph [ref=e149]:
+                - text: 在接入
+                - code [ref=e150]: MDX + Vue
+                - text: 之前，这个博客本来就已经支持一批很适合写长文的基础表达能力。这些内容我也一起合并到这篇文章里，方便以后拿它当总样板。
+              - generic [ref=e151]:
+                - 'heading "标题层级、强调与链接 #" [level=3] [ref=e152]':
+                  - text: 标题层级、强调与链接
+                  - link "#" [ref=e153] [cursor=pointer]:
+                    - /url: "#标题层级强调与链接"
+                - paragraph [ref=e154]:
+                  - text: 正文里支持
+                  - strong [ref=e155]: 粗体
+                  - text: 、
+                  - emphasis [ref=e156]: 斜体
+                  - text: 、
+                  - deletion [ref=e157]: 删除线
+                  - text: 、
+                  - code [ref=e158]: 行内代码
+                  - text: 、
+                  - link "超链接" [ref=e159] [cursor=pointer]:
+                    - /url: https://astro.build/
+                  - text: 这些基础表达。
+                - generic [ref=e160]:
+                  - 'heading "四级标题示例 #" [level=4] [ref=e161]':
+                    - text: 四级标题示例
+                    - link "#" [ref=e162] [cursor=pointer]:
+                      - /url: "#四级标题示例"
+                  - paragraph [ref=e163]: 长文章里把内容拆成多层标题后，右侧目录会更好用，文章结构也会更清楚。
+            - generic [ref=e164]:
+              - 'heading "列表、引用与表格 #" [level=2] [ref=e165]':
+                - text: 列表、引用与表格
+                - link "#" [ref=e166] [cursor=pointer]:
+                  - /url: "#列表引用与表格"
+              - paragraph [ref=e167]: 无序列表：
+              - list [ref=e168]:
+                - listitem [ref=e169]: 适合整理要点
+                - listitem [ref=e170]: 适合快速扫读
+                - listitem [ref=e171]: 适合做摘要
+              - paragraph [ref=e172]: 有序列表：
+              - list [ref=e173]:
+                - listitem [ref=e174]: 定义主题
+                - listitem [ref=e175]: 拆出结构
+                - listitem [ref=e176]: 补齐细节
+              - paragraph [ref=e177]: 引用：
+              - blockquote [ref=e178]:
+                - paragraph [ref=e179]: 好的内容页不只是堆信息，而是让文字、图表和交互都能顺着叙事往前走。
+              - table [ref=e180]:
+                - rowgroup [ref=e181]:
+                  - row "能力 当前状态 适合展示什么" [ref=e182]:
+                    - columnheader "能力" [ref=e183]
+                    - columnheader "当前状态" [ref=e184]
+                    - columnheader "适合展示什么" [ref=e185]
+                - rowgroup [ref=e186]:
+                  - row "Markdown 基础格式 已支持 博客正文、笔记、教程" [ref=e187]:
+                    - cell "Markdown 基础格式" [ref=e188]
+                    - cell "已支持" [ref=e189]
+                    - cell "博客正文、笔记、教程" [ref=e190]
+                  - row "Mermaid 已支持 流程图、时序图、架构图" [ref=e191]:
+                    - cell "Mermaid" [ref=e192]
+                    - cell "已支持" [ref=e193]
+                    - cell "流程图、时序图、架构图" [ref=e194]
+                  - row "ECharts 已支持 折线图、柱状图、饼图、仪表盘" [ref=e195]:
+                    - cell "ECharts" [ref=e196]
+                    - cell "已支持" [ref=e197]
+                    - cell "折线图、柱状图、饼图、仪表盘" [ref=e198]
+                  - row "Canvas 已支持 背景动效、自由动画、可视化实验" [ref=e199]:
+                    - cell "Canvas" [ref=e200]
+                    - cell "已支持" [ref=e201]
+                    - cell "背景动效、自由动画、可视化实验" [ref=e202]
+                  - row "图片灯箱 已支持 截图、封面、插图" [ref=e203]:
+                    - cell "图片灯箱" [ref=e204]
+                    - cell "已支持" [ref=e205]
+                    - cell "截图、封面、插图" [ref=e206]
+                  - row "页面切换动画 已支持 页面跳转过渡" [ref=e207]:
+                    - cell "页面切换动画" [ref=e208]
+                    - cell "已支持" [ref=e209]
+                    - cell "页面跳转过渡" [ref=e210]
+            - generic [ref=e211]:
+              - 'heading "图片、提示块与公式 #" [level=2] [ref=e212]':
+                - text: 图片、提示块与公式
+                - link "#" [ref=e213] [cursor=pointer]:
+                  - /url: "#图片提示块与公式"
+              - paragraph [ref=e214]: 普通 Markdown 图片：
+              - paragraph [ref=e215]:
+                - img "博客预览图" [ref=e216]
+              - paragraph [ref=e217]: 原生 HTML 图片：
+              - img "博客预览图（HTML 图片示例）" [ref=e218]
+              - blockquote [ref=e219]:
+                - generic [ref=e220]: NOTE
+                - paragraph [ref=e221]: 这篇文章现在既是内容能力展示页，也是交互组件实验页。
+              - blockquote [ref=e222]:
+                - generic [ref=e223]: TIP
+                - paragraph [ref=e224]: 以后你写新文章时，可以直接从这里复制需要的段落、图表和组件用法。
+              - blockquote [ref=e225]:
+                - generic [ref=e226]: WARNING
+                - paragraph [ref=e227]: 如果文章里塞很多大型交互组件，首屏体积会明显上升，最好按模块控制加载方式。
+              - paragraph [ref=e228]:
+                - text: 行内公式示例：阅读时间可以近似写成
+                - generic [ref=e229]:
+                  - math [ref=e231]:
+                    - generic [ref=e233]:
+                      - generic [ref=e234]: t
+                      - generic [ref=e235]: ≈
+                      - generic [ref=e236]:
+                        - generic [ref=e237]: w
+                        - generic [ref=e238]: r
+                  - generic [ref=e239]:
+                    - generic [ref=e240]: t ≈
+                    - generic [ref=e246]:
+                      - generic [ref=e248]: r
+                      - generic [ref=e251]: w
+                - text: 。
+              - paragraph [ref=e255]: 块级公式示例：
+              - generic [ref=e257]:
+                - math [ref=e259]:
+                  - generic [ref=e261]:
+                    - generic [ref=e262]: Reading Time
+                    - generic [ref=e263]: =
+                    - generic [ref=e264]:
+                      - generic [ref=e265]: ⌈
+                      - generic [ref=e266]:
+                        - generic [ref=e267]: Words
+                        - generic [ref=e268]: "200"
+                      - generic [ref=e269]: ⌉
+                - generic [ref=e270]:
+                  - generic [ref=e271]:
+                    - generic [ref=e272]: Reading Time
+                    - text: =
+                  - generic [ref=e274]:
+                    - generic [ref=e275]: ⌈
+                    - generic [ref=e280]:
+                      - generic [ref=e281]: "200"
+                      - generic [ref=e284]: Words
+                    - generic [ref=e288]: ⌉
+            - generic [ref=e289]:
+              - 'heading "代码块与嵌入内容 #" [level=2] [ref=e290]':
+                - text: 代码块与嵌入内容
+                - link "#" [ref=e291] [cursor=pointer]:
+                  - /url: "#代码块与嵌入内容"
+              - figure [ref=e293]:
+                - generic [ref=e294]:
+                  - text: ts
+                  - code [ref=e295]:
+                    - generic [ref=e296]:
+                      - generic [ref=e297]:
+                        - generic: "1"
+                      - generic [ref=e298]: "type Feature = {"
+                    - generic [ref=e299]:
+                      - generic [ref=e300]:
+                        - generic: "2"
+                      - generic [ref=e301]: "name: string;"
+                    - generic [ref=e302]:
+                      - generic [ref=e303]:
+                        - generic: "3"
+                      - generic [ref=e304]: "enabled: boolean;"
+                    - generic [ref=e305]:
+                      - generic [ref=e306]:
+                        - generic: "4"
+                      - generic [ref=e307]: "};"
+                    - generic [ref=e309]:
+                      - generic: "5"
+                    - generic [ref=e311]:
+                      - generic [ref=e312]:
+                        - generic: "6"
+                      - generic [ref=e313]: "const features: Feature[] = ["
+                    - generic [ref=e314]:
+                      - generic [ref=e315]:
+                        - generic: "7"
+                      - generic [ref=e316]: "{ name: \"mermaid\", enabled: true },"
+                    - generic [ref=e318]:
+                      - generic [ref=e319]:
+                        - generic: "8"
+                      - generic [ref=e320]: "{ name: \"echarts\", enabled: true },"
+                    - generic [ref=e322]:
+                      - generic [ref=e323]:
+                        - generic: "9"
+                      - generic [ref=e324]: "{ name: \"canvas\", enabled: true },"
+                    - generic [ref=e326]:
+                      - generic [ref=e327]:
+                        - generic: "10"
+                      - generic [ref=e328]: "];"
+                    - generic [ref=e330]:
+                      - generic: "11"
+                    - generic [ref=e332]:
+                      - generic [ref=e333]:
+                        - generic: "12"
+                      - generic [ref=e334]: console.log(features.filter((item) => item.enabled));
+                  - button "Copy code" [ref=e335] [cursor=pointer]:
+                    - generic:
+                      - img
+                      - img
+              - figure "Terminal window" [ref=e337]:
+                - generic [ref=e340]: Terminal window
+                - generic [ref=e341]:
+                  - text: bash
+                  - code [ref=e342]:
+                    - generic [ref=e343]:
+                      - generic [ref=e344]:
+                        - generic: "1"
+                      - generic [ref=e345]: pnpm install
+                    - generic [ref=e346]:
+                      - generic [ref=e347]:
+                        - generic: "2"
+                      - generic [ref=e348]: pnpm dev
+                    - generic [ref=e349]:
+                      - generic [ref=e350]:
+                        - generic: "3"
+                      - generic [ref=e351]: pnpm check
+                    - generic [ref=e352]:
+                      - generic [ref=e353]:
+                        - generic: "4"
+                      - generic [ref=e354]: pnpm build
+                  - button "Copy code" [ref=e355] [cursor=pointer]:
+                    - generic:
+                      - img
+                      - img
+              - paragraph [ref=e356]:
+                - text: 这个主题也能容纳
+                - code [ref=e357]: iframe
+                - text: 内容：
+              - iframe [ref=e358]:
+                - generic [ref=f6e2]:
+                  - generic [ref=f6e3]: Embedded Demo
+                  - heading "iframe 内容可以直接嵌进文章" [level=2] [ref=f6e4]
+                  - paragraph [ref=f6e5]: 你可以放视频、外部演示页、交互卡片，或者任何受控的 HTML 内容。
+            - generic [ref=e359]:
+              - 'heading "Mermaid：流程图 / 时序图 / 架构表达 #" [level=2] [ref=e360]':
+                - text: Mermaid：流程图 / 时序图 / 架构表达
+                - link "#" [ref=e361] [cursor=pointer]:
+                  - /url: "#mermaid流程图--时序图--架构表达"
+              - paragraph [ref=e362]: Mermaid 很适合在文章里放流程、调用链、系统关系图。
+              - generic [ref=e364]:
+                - generic [ref=e365]: 文章发布流程
+                - document [ref=e367]:
+                  - generic [ref=e370]:
+                    - paragraph [ref=e377]: 写作想法
+                    - paragraph [ref=e384]: 起草 MDX 文章
+                    - paragraph [ref=e391]: 引入 Vue 组件
+                    - paragraph [ref=e398]: 本地预览
+                    - paragraph [ref=e405]: 发布到博客
+                    - paragraph [ref=e412]: 读者看到图表与动画
+              - paragraph [ref=e413]: 下面这个是时序图示例：
+              - generic [ref=e415]:
+                - generic [ref=e416]: 页面访问时的渲染时序
+                - document [ref=e418]:
+                  - generic [ref=e421]: ECharts
+                  - generic [ref=e424]: Vue Island
+                  - generic [ref=e427]: Astro Page
+                  - generic [ref=e430]: User
+                  - generic [ref=e434]: ECharts
+                  - generic [ref=e438]: Vue Island
+                  - generic [ref=e442]: Astro Page
+                  - generic [ref=e446]: User
+                  - generic [ref=e447]: Open post
+                  - generic [ref=e448]: Hydrate imported component
+                  - generic [ref=e449]: Initialize chart instance
+                  - generic [ref=e450]: Render interactive visual
+            - generic [ref=e451]:
+              - 'heading "ECharts：折线图、柱状图、饼图 #" [level=2] [ref=e452]':
+                - text: ECharts：折线图、柱状图、饼图
+                - link "#" [ref=e453] [cursor=pointer]:
+                  - /url: "#echarts折线图柱状图饼图"
+              - paragraph [ref=e454]: 图表这部分现在也已经适合直接进文章了。你只需要在 MDX 里准备一个 option 对象，再把它传给组件。
+              - generic [ref=e457]: 一周访问趋势
+              - generic [ref=e463]: 文章分类占比
+              - generic [ref=e469]: 站点模块健康度
+              - paragraph [ref=e473]: ECharts 本身就自带动画能力，所以像数值过渡、柱状图生长、折线缓动这些效果，不需要你额外再造一套轮子。
+            - generic [ref=e474]:
+              - 'heading "Canvas：更自由的视觉动画 #" [level=2] [ref=e475]':
+                - text: Canvas：更自由的视觉动画
+                - link "#" [ref=e476] [cursor=pointer]:
+                  - /url: "#canvas更自由的视觉动画"
+              - paragraph [ref=e477]: 如果你想要的不是标准图表，而是更自由的视觉效果，比如背景动效、粒子、波浪、轨道动画，那就更适合用 Canvas。
+              - generic [ref=e480]: Canvas Waves
+              - generic [ref=e485]: Canvas Particles
+              - generic [ref=e490]: Canvas Orbits
+              - paragraph [ref=e493]: 这种方式很适合做：
+              - list [ref=e494]:
+                - listitem [ref=e495]: 文章头部的氛围动画
+                - listitem [ref=e496]: 项目页里的可视化背景
+                - listitem [ref=e497]: 数据故事里的轻量交互效果
+                - listitem [ref=e498]: 不适合用标准图表表达的动态内容
+            - generic [ref=e499]:
+              - 'heading "这套写法以后怎么用 #" [level=2] [ref=e500]':
+                - text: 这套写法以后怎么用
+                - link "#" [ref=e501] [cursor=pointer]:
+                  - /url: "#这套写法以后怎么用"
+              - paragraph [ref=e502]: 以后你写文章时，大概就是这个工作流：
+              - list [ref=e503]:
+                - listitem [ref=e504]:
+                  - text: 新建
+                  - code [ref=e505]: .mdx
+                  - text: 文章
+                - listitem [ref=e506]: 在文件顶部 import 你要用的 Vue 组件
+                - listitem [ref=e507]: 在正文里像写普通标签一样直接插入组件
+                - listitem [ref=e508]:
+                  - text: 用
+                  - code [ref=e509]: client:load
+                  - text: 、
+                  - code [ref=e510]: client:visible
+                  - text: 这类指令控制 hydration 时机
+            - generic [ref=e511]:
+              - 'heading "适合继续扩展的方向 #" [level=2] [ref=e512]':
+                - text: 适合继续扩展的方向
+                - link "#" [ref=e513] [cursor=pointer]:
+                  - /url: "#适合继续扩展的方向"
+              - paragraph [ref=e514]:
+                - text: 既然现在已经走到
+                - code [ref=e515]: MDX + Vue
+                - text: 了，后面你还可以继续加：
+              - list [ref=e516]:
+                - listitem [ref=e517]: 可交互的时间线组件
+                - listitem [ref=e518]: 代码执行结果可视化组件
+                - listitem [ref=e519]: 音频频谱或波形组件
+                - listitem [ref=e520]: 地图、网络拓扑、节点关系图
+                - listitem [ref=e521]: 带参数控制面板的小型 Demo
+              - paragraph [ref=e522]: 如果你愿意，我下一步可以继续帮你把这套能力再往前推一层，比如：
+              - list [ref=e523]:
+                - listitem [ref=e524]:
+                  - text: 做一个统一的
+                  - code [ref=e525]: ChartCard
+                  - text: /
+                  - code [ref=e526]: DiagramCard
+                  - text: 组件库
+                - listitem [ref=e527]: 给文章增加可折叠 Demo 区
+                - listitem [ref=e528]: 做一个专门展示所有交互组件的实验页
+          - generic [ref=e529]:
+            - generic [ref=e530]: 交互内容实验室：MDX、Vue、Mermaid、ECharts 与 Canvas
+            - link "http://localhost:4321/ashenwitch/posts/interactive-components-lab/" [ref=e531] [cursor=pointer]:
+              - /url: http://localhost:4321/ashenwitch/posts/interactive-components-lab/
+            - generic [ref=e532]:
+              - generic [ref=e533]:
+                - generic [ref=e534]: 作者
+                - generic [ref=e535]: NoirElaina
+              - generic [ref=e536]:
+                - generic [ref=e537]: 发布于
+                - generic [ref=e538]: 2026-05-11
+              - generic [ref=e539]:
+                - generic [ref=e540]: 许可协议
+                - link "CC BY-NC-SA 4.0" [ref=e541] [cursor=pointer]:
+                  - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - img
+        - generic [ref=e542]:
+          - link:
+            - /url: "#"
+          - link "我的第一篇文章" [ref=e543] [cursor=pointer]:
+            - /url: /ashenwitch/posts/my-first-post/
+            - generic [ref=e544]:
+              - generic [ref=e545]: 我的第一篇文章
+              - img [ref=e546]
+    - generic [ref=e551]:
+      - text: © 2026 NoirElaina. All Rights Reserved. /
+      - link "RSS" [ref=e552] [cursor=pointer]:
+        - /url: /ashenwitch/rss.xml
+      - text: /
+      - link "Sitemap" [ref=e553] [cursor=pointer]:
+        - /url: /ashenwitch/sitemap-index.xml
+      - text: Powered by
+      - link "Astro" [ref=e554] [cursor=pointer]:
+        - /url: https://astro.build
+      - text: "&"
+      - link "Fuwari" [ref=e555] [cursor=pointer]:
+        - /url: https://github.com/saicaca/fuwari
+  - generic [ref=e558]:
+    - button "Menu" [ref=e559]:
+      - img [ref=e561]
+      - generic: Menu
+    - button "Inspect" [ref=e565]:
+      - img [ref=e567]
+      - generic: Inspect
+    - button "Audit" [ref=e569]:
+      - generic [ref=e570]:
+        - img [ref=e571]
+        - img [ref=e574]
+      - generic: Audit
+    - button "Settings" [ref=e577]:
+      - img [ref=e579]
+      - generic: Settings
+  - paragraph [ref=e582]

@@ -1,0 +1,6 @@
+[     826ms] [LOG] Pagefind is not available in development mode. Using mock data. @ http://localhost:4321/src/components/Search.svelte:134
+[     826ms] [LOG] Pagefind status on init: false @ http://localhost:4321/src/components/Search.svelte:127
+[   16608ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://api.iconify.design/material-symbols.json?icons=dark-mode-outline-rounded%2Cradio-button-partial-outline%2Csearch%2Cwb-sunny-outline-rounded:0
+[   16609ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://api.iconify.design/fa6-solid.json?icons=arrow-rotate-left:0
+[  121213ms] [LOG] Pagefind is not available in development mode. Using mock data. @ http://localhost:4321/src/components/Search.svelte:134
+[  121216ms] [LOG] Pagefind status on init: false @ http://localhost:4321/src/components/Search.svelte:127

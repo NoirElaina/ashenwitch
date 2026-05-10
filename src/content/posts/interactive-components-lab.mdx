@@ -1,0 +1,342 @@
+---
+title: 交互内容实验室：MDX、Vue、Mermaid、ECharts 与 Canvas
+published: 2026-05-11
+description: 这是一篇基于 MDX 的演示文章，直接在内容里引入 Vue 组件，展示流程图、图表和 Canvas 动画。
+image: ../../assets/images/demo-banner.png
+tags: [MDX, Vue, Mermaid, ECharts, Canvas]
+category: 展示
+draft: false
+---
+
+import MermaidDiagram from "../../components/mdx/MermaidDiagram.vue";
+import EChartsPanel from "../../components/mdx/EChartsPanel.vue";
+import CanvasMotion from "../../components/mdx/CanvasMotion.vue";
+
+export const publishingFlow = `
+flowchart LR
+    A[写作想法] --> B[起草 MDX 文章]
+    B --> C[引入 Vue 组件]
+    C --> D[本地预览]
+    D --> E[发布到博客]
+    E --> F[读者看到图表与动画]
+`;
+
+export const hydrationSequence = `
+sequenceDiagram
+    participant User as User
+    participant Page as Astro Page
+    participant Vue as Vue Island
+    participant Chart as ECharts
+
+    User->>Page: Open post
+    Page->>Vue: Hydrate imported component
+    Vue->>Chart: Initialize chart instance
+    Chart-->>User: Render interactive visual
+`;
+
+export const trafficTrendOption = {
+	grid: {
+		top: 40,
+		right: 20,
+		bottom: 30,
+		left: 44,
+	},
+	tooltip: {
+		trigger: "axis",
+	},
+	xAxis: {
+		type: "category",
+		data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+		boundaryGap: false,
+	},
+	yAxis: {
+		type: "value",
+	},
+	series: [
+		{
+			name: "Visits",
+			type: "line",
+			smooth: true,
+			data: [120, 182, 191, 234, 290, 330, 410],
+			areaStyle: {},
+			lineStyle: {
+				width: 3,
+			},
+		},
+	],
+	animationDuration: 1200,
+};
+
+export const categoryOption = {
+	tooltip: {
+		trigger: "item",
+	},
+	legend: {
+		bottom: 0,
+	},
+	series: [
+		{
+			name: "Posts",
+			type: "pie",
+			radius: ["38%", "68%"],
+			avoidLabelOverlap: true,
+			itemStyle: {
+				borderRadius: 10,
+				borderColor: "#fff",
+				borderWidth: 2,
+			},
+			label: {
+				show: true,
+				formatter: "{b}\n{d}%",
+			},
+			data: [
+				{ value: 12, name: "AI" },
+				{ value: 18, name: "Frontend" },
+				{ value: 8, name: "Notes" },
+				{ value: 6, name: "DevOps" },
+			],
+			animationDuration: 900,
+		},
+	],
+};
+
+export const systemHealthOption = {
+	grid: {
+		top: 24,
+		right: 20,
+		bottom: 30,
+		left: 44,
+	},
+	tooltip: {
+		trigger: "axis",
+	},
+	xAxis: {
+		type: "category",
+		data: ["API", "Search", "Images", "Deploy", "Comments"],
+	},
+	yAxis: {
+		type: "value",
+		max: 100,
+	},
+	series: [
+		{
+			type: "bar",
+			barWidth: "46%",
+			data: [98, 92, 88, 95, 76],
+			animationDuration: 1000,
+		},
+	],
+};
+
+# 交互内容实验室
+
+这篇文章的重点不是“介绍 MDX 是什么”，而是直接验证一件事：
+
+> 现在这个博客已经可以在文章内容里直接引入 Vue 组件。
+
+也就是说，后面你不只是能写普通段落、图片和代码块，还可以把图表、流程图、交互可视化、Canvas 动画直接塞进文章正文。
+
+## 基础内容能力
+
+在接入 `MDX + Vue` 之前，这个博客本来就已经支持一批很适合写长文的基础表达能力。这些内容我也一起合并到这篇文章里，方便以后拿它当总样板。
+
+### 标题层级、强调与链接
+
+正文里支持**粗体**、*斜体*、~~删除线~~、`行内代码`、[超链接](https://astro.build/) 这些基础表达。
+
+#### 四级标题示例
+
+长文章里把内容拆成多层标题后，右侧目录会更好用，文章结构也会更清楚。
+
+## 列表、引用与表格
+
+无序列表：
+
+- 适合整理要点
+- 适合快速扫读
+- 适合做摘要
+
+有序列表：
+
+1. 定义主题
+2. 拆出结构
+3. 补齐细节
+
+引用：
+
+> 好的内容页不只是堆信息，而是让文字、图表和交互都能顺着叙事往前走。
+
+| 能力 | 当前状态 | 适合展示什么 |
+| --- | --- | --- |
+| Markdown 基础格式 | 已支持 | 博客正文、笔记、教程 |
+| Mermaid | 已支持 | 流程图、时序图、架构图 |
+| ECharts | 已支持 | 折线图、柱状图、饼图、仪表盘 |
+| Canvas | 已支持 | 背景动效、自由动画、可视化实验 |
+| 图片灯箱 | 已支持 | 截图、封面、插图 |
+| 页面切换动画 | 已支持 | 页面跳转过渡 |
+
+## 图片、提示块与公式
+
+普通 Markdown 图片：
+
+![博客预览图](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
+
+原生 HTML 图片：
+
+<img
+  src="https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png"
+  alt="博客预览图（HTML 图片示例）"
+  style="border-radius: 16px;"
+/>
+
+:::note
+这篇文章现在既是内容能力展示页，也是交互组件实验页。
+:::
+
+:::tip
+以后你写新文章时，可以直接从这里复制需要的段落、图表和组件用法。
+:::
+
+:::warning
+如果文章里塞很多大型交互组件，首屏体积会明显上升，最好按模块控制加载方式。
+:::
+
+行内公式示例：阅读时间可以近似写成 $t \approx \frac{w}{r}$。
+
+块级公式示例：
+
+$$
+\text{Reading Time} = \left\lceil \frac{\text{Words}}{200} \right\rceil
+$$
+
+## 代码块与嵌入内容
+
+```ts
+type Feature = {
+  name: string;
+  enabled: boolean;
+};
+
+const features: Feature[] = [
+  { name: "mermaid", enabled: true },
+  { name: "echarts", enabled: true },
+  { name: "canvas", enabled: true },
+];
+
+console.log(features.filter((item) => item.enabled));
+```
+
+```bash
+pnpm install
+pnpm dev
+pnpm check
+pnpm build
+```
+
+这个主题也能容纳 `iframe` 内容：
+
+<iframe
+  title="iframe-demo"
+  style="width: 100%; min-height: 220px; border: none; border-radius: 16px;"
+  srcdoc="
+    <html>
+      <body style='margin:0;font-family:system-ui;background:linear-gradient(135deg,#0f172a,#1e293b);display:flex;align-items:center;justify-content:center;min-height:220px;color:#e2e8f0;'>
+        <div style='text-align:center;padding:24px;max-width:520px;'>
+          <div style='font-size:14px;letter-spacing:0.12em;opacity:0.75;text-transform:uppercase;'>Embedded Demo</div>
+          <h2 style='margin:12px 0 8px;font-size:28px;'>iframe 内容可以直接嵌进文章</h2>
+          <p style='margin:0;line-height:1.7;'>你可以放视频、外部演示页、交互卡片，或者任何受控的 HTML 内容。</p>
+        </div>
+      </body>
+    </html>
+  "
+></iframe>
+
+## Mermaid：流程图 / 时序图 / 架构表达
+
+Mermaid 很适合在文章里放流程、调用链、系统关系图。
+
+<MermaidDiagram
+  client:load
+  title="文章发布流程"
+  code={publishingFlow}
+/>
+
+下面这个是时序图示例：
+
+<MermaidDiagram
+  client:load
+  title="页面访问时的渲染时序"
+  code={hydrationSequence}
+/>
+
+## ECharts：折线图、柱状图、饼图
+
+图表这部分现在也已经适合直接进文章了。你只需要在 MDX 里准备一个 option 对象，再把它传给组件。
+
+<EChartsPanel
+  client:load
+  title="一周访问趋势"
+  option={trafficTrendOption}
+  height={360}
+  renderer="canvas"
+/>
+
+<EChartsPanel
+  client:load
+  title="文章分类占比"
+  option={categoryOption}
+  height={380}
+  renderer="canvas"
+/>
+
+<EChartsPanel
+  client:load
+  title="站点模块健康度"
+  option={systemHealthOption}
+  height={320}
+  renderer="canvas"
+/>
+
+ECharts 本身就自带动画能力，所以像数值过渡、柱状图生长、折线缓动这些效果，不需要你额外再造一套轮子。
+
+## Canvas：更自由的视觉动画
+
+如果你想要的不是标准图表，而是更自由的视觉效果，比如背景动效、粒子、波浪、轨道动画，那就更适合用 Canvas。
+
+<CanvasMotion client:load title="Canvas Waves" preset="waves" height={260} />
+
+<CanvasMotion client:load title="Canvas Particles" preset="particles" height={260} />
+
+<CanvasMotion client:load title="Canvas Orbits" preset="orbits" height={260} />
+
+这种方式很适合做：
+
+- 文章头部的氛围动画
+- 项目页里的可视化背景
+- 数据故事里的轻量交互效果
+- 不适合用标准图表表达的动态内容
+
+## 这套写法以后怎么用
+
+以后你写文章时，大概就是这个工作流：
+
+1. 新建 `.mdx` 文章
+2. 在文件顶部 import 你要用的 Vue 组件
+3. 在正文里像写普通标签一样直接插入组件
+4. 用 `client:load`、`client:visible` 这类指令控制 hydration 时机
+
+## 适合继续扩展的方向
+
+既然现在已经走到 `MDX + Vue` 了，后面你还可以继续加：
+
+- 可交互的时间线组件
+- 代码执行结果可视化组件
+- 音频频谱或波形组件
+- 地图、网络拓扑、节点关系图
+- 带参数控制面板的小型 Demo
+
+如果你愿意，我下一步可以继续帮你把这套能力再往前推一层，比如：
+
+- 做一个统一的 `ChartCard` / `DiagramCard` 组件库
+- 给文章增加可折叠 Demo 区
+- 做一个专门展示所有交互组件的实验页
