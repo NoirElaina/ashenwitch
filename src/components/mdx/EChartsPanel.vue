@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
+import { BarChart, GaugeChart, LineChart, PieChart } from "echarts/charts";
 import {
 	DatasetComponent,
 	GridComponent,
@@ -8,10 +8,10 @@ import {
 	TooltipComponent,
 	TransformComponent,
 } from "echarts/components";
-import { BarChart, GaugeChart, LineChart, PieChart } from "echarts/charts";
+import { type EChartsOption, type EChartsType, init, use } from "echarts/core";
 import { LabelLayout, UniversalTransition } from "echarts/features";
-import { init, use, type EChartsOption, type EChartsType } from "echarts/core";
 import { CanvasRenderer, SVGRenderer } from "echarts/renderers";
+import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 
 use([
 	BarChart,

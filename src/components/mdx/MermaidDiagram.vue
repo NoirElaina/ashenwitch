@@ -25,7 +25,9 @@ let renderIndex = 0;
 let themeObserver: MutationObserver | null = null;
 
 function getMermaidTheme() {
-	return document.documentElement.classList.contains("dark") ? "dark" : "default";
+	return document.documentElement.classList.contains("dark")
+		? "dark"
+		: "default";
 }
 
 async function ensureMermaid() {
@@ -58,7 +60,9 @@ async function renderDiagram() {
 	} catch (error) {
 		container.value.innerHTML = "";
 		errorMessage.value =
-			error instanceof Error ? error.message : "Failed to render Mermaid diagram.";
+			error instanceof Error
+				? error.message
+				: "Failed to render Mermaid diagram.";
 	}
 }
 

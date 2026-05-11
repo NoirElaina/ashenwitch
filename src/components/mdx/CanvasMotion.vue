@@ -84,7 +84,8 @@ function drawWaves(
 		for (let x = 0; x <= width; x += 4) {
 			const y =
 				height * (0.35 + index * 0.16) +
-				Math.sin(x / widthFactor + time * (0.0014 + index * 0.0004)) * amplitude;
+				Math.sin(x / widthFactor + time * (0.0014 + index * 0.0004)) *
+					amplitude;
 
 			if (x === 0) {
 				context.moveTo(x, y);
